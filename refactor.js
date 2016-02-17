@@ -83,7 +83,9 @@ letter = "z";
 console.log("The letter is", letter);
 
 // Put your answer below -------------------------
-
+/*The answer would be [c] z then y becuase the function is redefining the
+value of the variable "letter" first to z and then once the timeout activates
+it resets again to y. */
 
 // -----------------------------------------------
 
