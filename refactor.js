@@ -184,14 +184,19 @@ foo="bar";
 // function called `callNtimes` that allows you
 // to specify a number of times to call the given
 // function.
-
+function test(){
+  return 'testy';
+}
 var callTenTimes = function(callback) {
   var range = _.range(10);
   _.each(range, callback);
 };
-
+console.log(callTenTimes(test()));
 // Put your answer below -------------------------
-
+var callNTimes = function(callback,n) {
+  var range = _.range(n);
+  _.each(range, callback);
+};
 
 // -----------------------------------------------
 
