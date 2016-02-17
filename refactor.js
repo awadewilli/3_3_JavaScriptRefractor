@@ -167,6 +167,8 @@ console.log(findcolor('Verde'));
 var foo = "bar";
 
 // Put your answer below -------------------------
+var foo = "";
+foo="bar";
 
 
 // -----------------------------------------------
