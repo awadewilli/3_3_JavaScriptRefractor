@@ -23,10 +23,10 @@
 // to a variable containing an anonymous
 // function
 
-/*function doSomethingCool() {
+function doSomethingCool() {
   console.log("Something Cool!");
 }
-*/
+
 // Put your answer below -------------------------
 
 var doSomethingCool = function(){
@@ -51,7 +51,10 @@ setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
 
-
+var sayHi = function(){
+  alert("Hello, World");
+};
+setTimeout(sayHi,2000);
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
