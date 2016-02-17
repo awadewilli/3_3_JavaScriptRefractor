@@ -285,10 +285,23 @@ var speed = 0;
 var accelerate = function(amount) {
   speed += amount;
 };
-
+console.log("callaccelerator: ", accelerate(), speed);
 // Put your answer below -------------------------
+//When no argument is given to the function the "amount" parameter reamains
+//undefined. Thus speed += amount results in speed= 0 + undefined which is
+//equal to NaN. Proven with console.log(isNaN(0+undefined));
 
 
+var speed = 5;
+
+var accelerate = function(amount) {
+  if(amount===undefined){
+    speed+=1;}
+  else{
+    speed += amount;
+  }
+};
+console.log("callaccelerator: ", accelerate(), speed);
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
