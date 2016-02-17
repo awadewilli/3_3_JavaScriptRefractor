@@ -343,7 +343,18 @@ var callLater = function(timeout, callback) {
 };
 
 // Put your answer below -------------------------
+function alertFunc() {
+    alert("Invalid Parameters");
+}
 
+var callLater = function(timeout, callback) {
+  if (timeout === undefined||callback === undefined){
+    setTimeout(alertFunc(),1);
+  }
+  else{
+    setTimeout(callback, timeout);
+  }
+};
 
 // -----------------------------------------------
 
